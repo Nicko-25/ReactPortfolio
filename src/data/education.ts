@@ -7,7 +7,7 @@ export const education: EducationEntry[] = [
     title: 'Especialización en Inteligencia Artificial orientada al análisis de datos',
     institution: 'Universidad de Asturias',
     location: 'Bogotá, D.C.',
-    period: 'Desde 03/2025',
+    period: '2025 - 2026',
     status: 'Finalizada',
     detail: 'Analítica de datos, IA generativa, computer vision y storytelling con Power BI.',
   },

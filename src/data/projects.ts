@@ -3,16 +3,16 @@ import type { Project } from '@/models/portfolio';
 // Generic, non-confidential descriptions. Add `repoUrl` / `demoUrl` only when a public link exists.
 export const projects: Project[] = [
   {
-    id: 'nexus-web',
-    title: 'Nexus Web',
+    id: 'public-catalog-site',
+    title: 'Sitio web público de catálogo y crédito',
     description:
-      'Nueva web pública de Supre Motos con catálogo, ficha de producto, simulador y solicitud de crédito. Next.js con App Router, SEO técnico y Atomic Design.',
+      'Sitio web público con catálogo, ficha de producto, simulador y solicitud de crédito. Next.js con App Router, SEO técnico y Atomic Design.',
     tags: ['Next.js', 'React 19', 'TypeScript', 'Tailwind CSS', 'Jest'],
     visual: 'globe',
   },
   {
-    id: 'omnia-erp',
-    title: 'Omnia ERP',
+    id: 'multitenant-erp',
+    title: 'ERP multi-tenant',
     description:
       'Microservicios NestJS multi-tenant con arquitectura hexagonal para módulos como contabilidad, inventario y pagos.',
     tags: ['NestJS', 'TypeORM', 'PostgreSQL', 'DDD', 'Multi-tenancy'],
@@ -27,16 +27,16 @@ export const projects: Project[] = [
     visual: 'messages',
   },
   {
-    id: 'omnia-site',
-    title: 'Sitio web corporativo (omnia-site)',
+    id: 'corporate-site',
+    title: 'Sitio web corporativo',
     description:
       'Aplicación web en React con Atomic Design, estado global con Redux Toolkit y componentes MUI.',
     tags: ['React', 'Vite', 'MUI', 'Redux Toolkit', 'TypeScript'],
     visual: 'globe',
   },
   {
-    id: 'supre-app',
-    title: 'App móvil Flutter (supre-app)',
+    id: 'flutter-app',
+    title: 'App móvil Flutter',
     description:
       'Aplicación móvil con Clean Architecture por features, BLoC para flujos complejos y navegación con rutas protegidas.',
     tags: ['Flutter', 'Dart', 'BLoC', 'get_it', 'go_router'],
