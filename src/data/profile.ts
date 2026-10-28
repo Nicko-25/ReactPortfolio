@@ -10,7 +10,7 @@ export const profile: Profile = {
   summary: [
     'Ingeniero de Sistemas con experiencia en desarrollo backend y frontend, especializado en aplicaciones escalables con NestJS, TypeORM y React. Manejo TypeScript a nivel avanzado, diseño y consumo de APIs REST e integración con múltiples servicios empresariales.',
     'Trabajo con bases de datos relacionales (PostgreSQL, MySQL, SQL Server), ORMs y transacciones multitenant. Diseño casos de uso, validaciones y pruebas unitarias y de integración con Jest para que el software sea mantenible y confiable.',
-    'Me motiva estructurar y optimizar procesos de negocio con tecnología. Actualmente me formo en inteligencia artificial y sistemas RAG (Recuperación Aumentada por Generación).',
+    'Me motiva estructurar y optimizar procesos de negocio con tecnología. Soy especialista en inteligencia artificial aplicada al análisis de datos, con interés en sistemas RAG (Recuperación Aumentada por Generación).',
   ],
   email: 'jonipega25@gmail.com',
   phoneDisplay: '+57 312 782 1492',
