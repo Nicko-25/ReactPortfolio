@@ -1,8 +1,3 @@
-export interface SocialLink {
-  label: string;
-  href: string;
-}
-
 export interface Profile {
   fullName: string;
   firstName: string;
@@ -15,7 +10,6 @@ export interface Profile {
   phoneHref: string;
   whatsappHref: string;
   location: string;
-  github: SocialLink;
   siteUrl: string;
   careerStart: string;
 }

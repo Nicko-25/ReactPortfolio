@@ -1,7 +1,6 @@
 import { ArrowRight, Mail } from 'lucide-react';
 import profileImage from '@/assets/profile.webp';
 import { ButtonLink } from '@/components/atoms/button-link';
-import { GithubIcon } from '@/components/atoms/brand-icons';
 import { Reveal } from '@/components/atoms/reveal';
 import { profile } from '@/data/profile';
 
@@ -40,14 +39,6 @@ export const HeroSection = () => (
             icon={<ArrowRight size={18} aria-hidden="true" />}
           >
             Ver proyectos
-          </ButtonLink>
-          <ButtonLink
-            href={profile.github.href}
-            variant="secondary"
-            aria-label="Perfil de GitHub de José Nicolás Pereira"
-            icon={<GithubIcon size={18} />}
-          >
-            GitHub
           </ButtonLink>
         </div>
       </Reveal>

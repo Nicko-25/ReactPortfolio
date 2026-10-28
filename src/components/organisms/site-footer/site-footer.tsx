@@ -1,4 +1,3 @@
-import { GithubIcon } from '@/components/atoms/brand-icons';
 import { Logo } from '@/components/atoms/logo';
 import { profile } from '@/data/profile';
 
@@ -11,15 +10,6 @@ export const SiteFooter = () => (
           © {new Date().getFullYear()} {profile.fullName}. Todos los derechos reservados.
         </p>
       </div>
-      <a
-        href={profile.github.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="GitHub de José Nicolás Pereira"
-        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-muted transition hover:text-fg"
-      >
-        <GithubIcon size={18} />
-      </a>
     </div>
   </footer>
 );

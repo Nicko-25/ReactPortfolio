@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
-import { GithubIcon, WhatsappIcon } from '@/components/atoms/brand-icons';
+import { WhatsappIcon } from '@/components/atoms/brand-icons';
 import { ButtonLink } from '@/components/atoms/button-link';
 import { Reveal } from '@/components/atoms/reveal';
 import { Section } from '@/components/atoms/section';
@@ -39,14 +39,6 @@ export const ContactSection = () => (
               icon={<MapPin size={20} aria-hidden="true" />}
               label="Ubicación"
               value={profile.location}
-            />
-          </li>
-          <li>
-            <ContactLink
-              icon={<GithubIcon size={20} />}
-              label="GitHub"
-              value="github.com/Nicko-25"
-              href={profile.github.href}
             />
           </li>
         </ul>

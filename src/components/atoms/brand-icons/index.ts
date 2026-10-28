@@ -1,1 +1,1 @@
-export { GithubIcon, WhatsappIcon } from './brand-icons';
+export { WhatsappIcon } from './brand-icons';

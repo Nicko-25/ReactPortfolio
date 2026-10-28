@@ -17,7 +17,6 @@ export const profile: Profile = {
   phoneHref: 'tel:+573127821492',
   whatsappHref: 'https://wa.me/573127821492',
   location: 'Montería, Colombia',
-  github: { label: 'GitHub', href: 'https://github.com/Nicko-25' },
   siteUrl: 'https://josepereira.vercel.app',
   careerStart: '2022-06',
 };
