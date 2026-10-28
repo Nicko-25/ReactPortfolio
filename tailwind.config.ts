@@ -1,29 +1,37 @@
 import type { Config } from 'tailwindcss';
 
-// Colors are CSS variables (RGB triplets) so light/dark themes swap without `dark:` variants everywhere.
-const token = (name: string) => `rgb(var(--${name}) / <alpha-value>)`;
-
 export default {
-  darkMode: 'class',
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        bg: token('bg'),
-        surface: token('surface'),
-        'surface-2': token('surface-2'),
-        fg: token('fg'),
-        muted: token('muted'),
-        line: token('line'),
-        'accent-from': token('accent-from'),
-        'accent-to': token('accent-to'),
+        ink: '#10151a',
+        paper: '#ffffff',
+        warm: '#f3f1ec',
+        line: '#e2dfd7',
+        muted: '#616161',
+        brand: {
+          DEFAULT: '#0f766e',
+          hover: '#0b5c56',
+          soft: '#cdeee9',
+          'on-dark': '#2dd4bf',
+        },
+        // Band-scoped tokens: values swap inside `.band-dark` (see index.css), not a user theme.
+        fg: 'var(--fg)',
+        inverse: 'var(--inverse)',
+        subtle: 'var(--subtle)',
+        accent: 'var(--accent)',
+        card: 'var(--card)',
+        'card-line': 'var(--card-line)',
+        chip: 'var(--chip)',
+        'chip-fg': 'var(--chip-fg)',
       },
       fontFamily: {
-        sans: ['"Inter Variable"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['"Roboto Variable"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        heading: ['"Roboto Condensed Variable"', '"Arial Narrow"', 'Arial', 'sans-serif'],
       },
-      backgroundImage: {
-        'accent-gradient': 'linear-gradient(135deg, rgb(var(--btn-from)), rgb(var(--btn-to)))',
-        'accent-text': 'linear-gradient(135deg, rgb(var(--accent-from)), rgb(var(--accent-to)))',
+      maxWidth: {
+        wrap: '1160px',
       },
     },
   },

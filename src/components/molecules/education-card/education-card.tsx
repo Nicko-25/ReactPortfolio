@@ -1,4 +1,3 @@
-import { GraduationCap } from 'lucide-react';
 import type { EducationEntry } from '@/models/portfolio';
 
 interface EducationCardProps {
@@ -8,26 +7,27 @@ interface EducationCardProps {
 }
 
 export const EducationCard = ({ entry, featured = false, className = '' }: EducationCardProps) => (
-  <article className={`card ${featured ? 'bg-surface-2' : ''} ${className}`}>
-    <div className="flex items-start justify-between gap-4">
-      <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-accent-gradient text-white">
-        <GraduationCap size={22} aria-hidden="true" />
-      </span>
+  <article className={`card ${className}`}>
+    <div className="flex flex-wrap items-center justify-between gap-3">
+      {entry.period && (
+        <p className="font-heading text-sm font-bold uppercase tracking-[0.1em] text-accent">
+          {entry.period}
+        </p>
+      )}
       {entry.status && (
-        <span className="rounded-full border border-accent-from/40 px-3 py-1 text-xs font-semibold text-accent-from">
+        <span className="rounded-md bg-brand-soft px-3 py-1 text-xs font-bold text-ink">
           {entry.status}
         </span>
       )}
     </div>
     <h3
-      className={`mt-5 font-semibold ${featured ? 'text-2xl sm:text-3xl' : 'text-lg sm:text-xl'}`}
+      className={`mt-3 font-bold leading-tight ${featured ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}
     >
       {entry.title}
     </h3>
-    <p className="mt-2 text-muted">
+    <p className="mt-2 text-subtle">
       {entry.institution} · {entry.location}
     </p>
-    {entry.period && <p className="mt-1 text-sm font-medium text-accent-from">{entry.period}</p>}
-    {entry.detail && <p className="mt-4 text-sm text-muted sm:text-base">{entry.detail}</p>}
+    {entry.detail && <p className="mt-4 text-[15px] text-subtle">{entry.detail}</p>}
   </article>
 );
