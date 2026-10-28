@@ -6,13 +6,16 @@ interface SectionHeadingProps {
 }
 
 export const SectionHeading = ({ id, eyebrow, title, description }: SectionHeadingProps) => (
-  <header className="mb-10 max-w-2xl sm:mb-14">
-    <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent-from">
+  <header className="mb-10 sm:mb-12">
+    <p className="mb-3 font-heading text-sm font-bold uppercase tracking-[0.14em] text-accent">
       {eyebrow}
     </p>
-    <h2 id={id} className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+    <h2
+      id={id}
+      className="max-w-[720px] text-[clamp(34px,4.5vw,56px)] font-extrabold uppercase leading-[1.05]"
+    >
       {title}
     </h2>
-    {description && <p className="mt-4 text-base text-muted sm:text-lg">{description}</p>}
+    {description && <p className="mt-4 max-w-[560px] text-[17px] text-subtle">{description}</p>}
   </header>
 );

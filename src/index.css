@@ -1,34 +1,30 @@
-@import '@fontsource-variable/inter/index.css';
+@import '@fontsource-variable/roboto/index.css';
+@import '@fontsource-variable/roboto-condensed/index.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --bg: 246 247 251;
-  --surface: 255 255 255;
-  --surface-2: 238 241 248;
-  --fg: 15 23 42;
-  --muted: 71 85 105;
-  --line: 15 23 42 / 0.1;
-  --accent-from: 109 40 217;
-  --accent-to: 14 116 144;
-  /* Button gradient stays dark enough for white text (AA) in both themes. */
-  --btn-from: 109 40 217;
-  --btn-to: 14 116 144;
-  color-scheme: light;
+  --fg: #10151a;
+  --inverse: #ffffff;
+  --subtle: #616161;
+  --accent: #0f766e;
+  --card: #ffffff;
+  --card-line: #e2dfd7;
+  --chip: #f3f1ec;
+  --chip-fg: #10151a;
 }
 
-.dark {
-  --bg: 7 11 23;
-  --surface: 14 20 38;
-  --surface-2: 21 29 54;
-  --fg: 237 241 250;
-  --muted: 148 163 184;
-  --line: 148 163 184 / 0.16;
-  --accent-from: 167 139 250;
-  --accent-to: 34 211 238;
-  color-scheme: dark;
+.band-dark {
+  --fg: #ffffff;
+  --inverse: #10151a;
+  --subtle: #a8b0b8;
+  --accent: #2dd4bf;
+  --card: #171d23;
+  --card-line: #27313a;
+  --chip: #222b33;
+  --chip-fg: #e6e6e6;
 }
 
 @layer base {
@@ -37,13 +33,22 @@
     scroll-padding-top: 5rem;
   }
   body {
-    @apply bg-bg font-sans text-fg antialiased;
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading tracking-[0.01em];
   }
   :focus-visible {
-    @apply outline outline-2 outline-offset-2 outline-accent-from;
+    @apply outline outline-2 outline-offset-2 outline-brand;
+  }
+  .band-dark :focus-visible {
+    @apply outline-brand-on-dark;
   }
   ::selection {
-    background: rgb(var(--accent-from) / 0.35);
+    background: #cdeee9;
+    color: #10151a;
   }
   @media (prefers-reduced-motion: reduce) {
     html {
@@ -53,13 +58,7 @@
 }
 
 @layer components {
-  .gradient-text {
-    @apply bg-accent-text bg-clip-text text-transparent;
-  }
   .card {
-    @apply rounded-3xl border border-line bg-surface p-6 sm:p-8;
-  }
-  .glass {
-    @apply border border-line bg-surface/70 backdrop-blur-xl;
+    @apply rounded-xl border border-card-line bg-card p-6;
   }
 }

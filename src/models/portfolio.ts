@@ -18,7 +18,6 @@ export interface SkillGroup {
   id: string;
   title: string;
   description: string;
-  icon: 'server' | 'layout' | 'smartphone' | 'cloud' | 'brain';
   items: string[];
 }
 
@@ -40,14 +39,11 @@ export interface ExperienceViewModel extends ExperienceEntry {
   isCurrent: boolean;
 }
 
-export type ProjectVisual = 'server' | 'messages' | 'globe' | 'smartphone' | 'database';
-
 export interface Project {
   id: string;
   title: string;
   description: string;
   tags: string[];
-  visual: ProjectVisual;
   repoUrl?: string;
   demoUrl?: string;
 }

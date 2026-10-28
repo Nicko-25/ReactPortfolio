@@ -13,7 +13,7 @@ export const NavLinks = ({
   onNavigate,
   orientation = 'horizontal',
 }: NavLinksProps) => (
-  <ul className={orientation === 'horizontal' ? 'flex items-center gap-1' : 'flex flex-col gap-1'}>
+  <ul className={orientation === 'horizontal' ? 'flex items-center gap-7' : 'flex flex-col gap-1'}>
     {items.map((item) => {
       const isActive = item.id === activeId;
       return (
@@ -22,8 +22,8 @@ export const NavLinks = ({
             href={`#${item.id}`}
             onClick={onNavigate}
             aria-current={isActive ? 'true' : undefined}
-            className={`block rounded-full px-4 py-2 text-sm font-medium transition hover:text-fg ${
-              isActive ? 'bg-surface-2 text-fg' : 'text-muted'
+            className={`block border-b-2 py-1.5 text-[15px] font-medium transition-colors duration-200 hover:border-brand hover:text-ink ${
+              isActive ? 'border-brand text-ink' : 'border-transparent text-muted'
             }`}
           >
             {item.label}

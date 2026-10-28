@@ -10,20 +10,18 @@ export const TimelineItem = ({ item }: TimelineItemProps) => (
     <span
       aria-hidden="true"
       className={`absolute left-0 top-2 h-3.5 w-3.5 rounded-full ${
-        item.isCurrent
-          ? 'bg-accent-gradient ring-4 ring-accent-from/25'
-          : 'border-2 border-accent-from bg-bg'
+        item.isCurrent ? 'bg-brand ring-4 ring-brand-soft' : 'border-2 border-brand bg-warm'
       }`}
     />
-    <article className="card">
-      <p className="text-sm font-medium text-accent-from">
-        {item.period} <span className="text-muted">· {item.duration}</span>
+    <article className="card sm:p-8">
+      <p className="font-heading text-sm font-bold uppercase tracking-[0.1em] text-accent">
+        {item.period} <span className="font-medium normal-case text-subtle">· {item.duration}</span>
       </p>
-      <h3 className="mt-2 text-xl font-semibold sm:text-2xl">{item.role}</h3>
-      <p className="text-muted">
+      <h3 className="mt-2 text-2xl font-bold leading-tight">{item.role}</h3>
+      <p className="text-subtle">
         {item.company} · {item.location}
       </p>
-      <ul className="mt-5 list-disc space-y-2 pl-5 text-sm text-muted marker:text-accent-from sm:text-base">
+      <ul className="mt-5 list-disc space-y-2 pl-5 text-[15px] text-subtle marker:text-brand">
         {item.highlights.map((highlight) => (
           <li key={highlight}>{highlight}</li>
         ))}

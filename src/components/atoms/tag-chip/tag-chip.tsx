@@ -3,7 +3,7 @@ interface TagChipProps {
 }
 
 export const TagChip = ({ label }: TagChipProps) => (
-  <span className="inline-flex items-center rounded-full border border-line bg-surface-2 px-3 py-1 text-xs font-medium text-fg/90 sm:text-sm">
+  <span className="inline-flex items-center rounded-md bg-chip px-[11px] py-[5px] text-[13px] text-chip-fg">
     {label}
   </span>
 );

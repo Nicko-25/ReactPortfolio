@@ -5,7 +5,6 @@ export const skillGroups: SkillGroup[] = [
     id: 'backend',
     title: 'Backend',
     description: 'Microservicios empresariales multi-tenant con arquitectura hexagonal.',
-    icon: 'server',
     items: [
       'NestJS 11',
       'TypeScript',
@@ -27,22 +26,31 @@ export const skillGroups: SkillGroup[] = [
   {
     id: 'frontend',
     title: 'Frontend',
-    description: 'Interfaces responsivas y mantenibles con Atomic Design.',
-    icon: 'layout',
-    items: ['React 18', 'Vite', 'MUI', 'Redux Toolkit', 'React Router', 'Atomic Design'],
+    description:
+      'Interfaces responsivas y mantenibles con Atomic Design, diseñadas y prototipadas en Figma.',
+    items: [
+      'React 18',
+      'Next.js',
+      'Vite',
+      'MUI',
+      'Tailwind CSS',
+      'Redux Toolkit',
+      'React Router',
+      'Atomic Design',
+      'Figma',
+      'Diseño UI',
+    ],
   },
   {
     id: 'mobile',
     title: 'Mobile',
     description: 'Apps móviles con Clean Architecture por features.',
-    icon: 'smartphone',
     items: ['Flutter / Dart', 'BLoC / Cubit', 'get_it', 'go_router', 'Dio'],
   },
   {
     id: 'cloud',
     title: 'Cloud, DevOps y Datos',
     description: 'Infraestructura como código y data lake con arquitectura Medallion.',
-    icon: 'cloud',
     items: [
       'AWS',
       'Terraform',
@@ -59,7 +67,6 @@ export const skillGroups: SkillGroup[] = [
     id: 'ai',
     title: 'IA y Datos',
     description: 'Especialización en inteligencia artificial orientada al análisis de datos.',
-    icon: 'brain',
     items: ['Analítica de datos', 'IA generativa', 'Computer vision', 'Power BI', 'Sistemas RAG'],
   },
 ];

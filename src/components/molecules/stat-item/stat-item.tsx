@@ -5,7 +5,7 @@ interface StatItemProps {
 
 export const StatItem = ({ value, label }: StatItemProps) => (
   <div>
-    <p className="gradient-text text-4xl font-extrabold sm:text-5xl">{value}</p>
-    <p className="mt-1 text-sm text-muted">{label}</p>
+    <p className="font-heading text-[40px] font-bold leading-none">{value}</p>
+    <p className="mt-1 text-sm text-subtle">{label}</p>
   </div>
 );

@@ -1,6 +1,6 @@
 # Portafolio de José Nicolás Pereira
 
-Sitio personal construido con Vite 6, React 18, TypeScript (strict), Tailwind CSS 3 y framer-motion. Una sola página con secciones ancla, tema oscuro por defecto con modo claro.
+Sitio personal construido con Vite 6, React 18, TypeScript (strict), Tailwind CSS 3. Una sola página con secciones ancla y diseño plano editorial: bandas alternas (cálida, oscura, blanca), tipografías Roboto y Roboto Condensed autoalojadas (`@fontsource-variable`), sin modo claro/oscuro.
 
 ## Requisitos
 
@@ -26,7 +26,7 @@ src/
   pages/        página Home
   data/         contenido tipado (perfil, stack, experiencia, proyectos, educación)
   adapters/     transforman los datos crudos a view models (fechas, duración, años)
-  hooks/        tema, sección activa
+  hooks/        sección activa
   models/       interfaces TypeScript
 ```
 
